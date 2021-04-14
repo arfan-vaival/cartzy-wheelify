@@ -4,7 +4,7 @@
   "keywords": ["PHP","Cartzy","SDK"],
   "homepage": "https://github.com/arfan-vaival/cartzy-wheelify",
   "type": "library",
-  "version": "2.0.2",
+  "version": "1.0.1",
   "require": {
     "php": ">=7.1",
     "ext-curl": "*",
