@@ -2,7 +2,7 @@
   "name": "arfan-vaival/cartzy-wheelify",
   "description": "PHP SDK for wheelify Cartzy API",
   "keywords": ["PHP","Cartzy","SDK"],
-  "homepage": "https://github.com/zohaib-vaival/php-cartzy",
+  "homepage": "https://github.com/arfan-vaival/cartzy-wheelify",
   "type": "library",
   "version": "2.0.2",
   "require": {
