@@ -1,6 +1,8 @@
 <?php
 namespace PHPCartzy\Discount;
 
+use PHPCartzy\CartzySDK;
+use PHPCartzy\CurlRequest;
 use PHPCartzy\Exception\SdkException;
 use PHPCartzy\HttpRequest;
 
@@ -27,5 +29,16 @@ class DiscountCode
             throw $ex;
         }
     }
+	public  function get_discount(){
+
+		try {
+			$config = CartzySDK::$config;
+			$request = new CurlRequest();
+			return $request->get($config['ApiUrl'].'discount');
+		}
+		catch (SdkException $ex) {
+			throw $ex;
+		}
+	}
 
 }

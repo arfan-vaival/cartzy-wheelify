@@ -366,26 +366,26 @@ class CartzySDK
                 $apiUrl = "https://$apiKey:$apiPassword@$shopUrl/api/";
             } else {
                 if ($_SERVER['HTTP_HOST'] == 'localhost') {
-                    $adminUrl = "http://localhost/cartzy/admin/";
-                    $apiUrl = "http://localhost/cartzy/api/";
+                    $adminUrl = "http://localhost/projects/cartzy/admin/";
+                    $apiUrl = "http://localhost/projects/cartzy/front/";
                 } else {
-                    if($shopUrl == 'cartzy-dev-store.blackbirdsuite.com') {
+                     if($shopUrl == 'cartupstore.com') {
                         $adminUrl = "https://admin.$shopUrl/";
-                        $apiUrl = "https://cartzy-dev-api.blackbirdsuite.com/";
-                    } else if($shopUrl == 'cartupstore.com') {
-                        $adminUrl = "https://admin.$shopUrl/";
-                        $apiUrl = "https://api.cartupstore.com/";
+                        $apiUrl = "https://cartupstore.com/";
                     } else {
                         $adminUrl = "https://$shopUrl/admin/";
                         //$adminUrl = "https://admin.$shopUrl/";
-                        $apiUrl = "https://$shopUrl/api/";
+                        $apiUrl = "https://$shopUrl/";
                     }
                 }
             }
         }
 
+
+
         self::$config['AdminUrl'] = $adminUrl;
-        self::$config['ApiUrl'] = $apiUrl.$apiVersion."/third_party/";
+        //self::$config['ApiUrl'] = $apiUrl.$apiVersion."/third_party/";
+		self::$config['ApiUrl'] = $apiUrl."/webhooks/";
 
         return $adminUrl;
     }
