@@ -1,6 +1,6 @@
 {
-  "name": "zohaib-vaival/php-cartzy",
-  "description": "PHP SDK for Cartzy API",
+  "name": "arfan-vaival/cartzy-wheelify",
+  "description": "PHP SDK for wheelify Cartzy API",
   "keywords": ["PHP","Cartzy","SDK"],
   "homepage": "https://github.com/zohaib-vaival/php-cartzy",
   "type": "library",
@@ -13,8 +13,8 @@
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "Muhammad Zohaib",
-      "email": "muhammad.zohaib@vaivaltech.com"
+      "name": "Muhammad Arfan",
+      "email": "muhammad.arfan@vaivaltech.com"
     }
   ],
   "autoload": {
