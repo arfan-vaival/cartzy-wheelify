@@ -6,7 +6,7 @@ PHPCartzy is a simple SDK implementation of Cartzy API. It helps accessing the A
 ## Installation
 Install with Composer
 ```shell
-composer require zohaib-vaival/php-cartzy
+composer require arfan-vaival/cartzy-wheelify
 ```
 
 ### Requirements
